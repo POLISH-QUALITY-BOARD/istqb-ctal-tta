@@ -8,3 +8,5 @@ To build locally, make sure you have docker installed, and run:
 * `docker pull ghcr.io/istqborg/istqb_product_base`
 * `docker run --rm -it --platform linux/amd64  -v "$PWD":/mnt  -w /mnt ghcr.io/istqborg/istqb_product_base compile-tex-to-pdf`
  
+## Convert docx to md
+`pandoc -f docx -t markdown FL-4.0.1-PL-wytyczne-do-akredytacji-v0.3.docx -o FL-4.0.1-PL-wytyczne-do-akredytacji-v0.3.md`
